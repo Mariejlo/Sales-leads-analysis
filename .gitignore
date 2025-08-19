@@ -7,20 +7,31 @@ __pycache__/
 *.py[cod]
 *.pyc
 *.pyo
+*.pyd
 *.so
 *.egg
 *.egg-info/
 dist/
 build/
-*.DS_Store
-Thumbs.db
+
 
 
 # ---Jupyter notebooks checkpoints
 .ipynb_checkpoints/
 
 #Ignore raw data files only
-data/raw/
+
+*.db
+*.sqlite
+*.duckdb
+*.parquet
+*.csv
+*.tsv
+*.json
+data/raw/*
+!data/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
 
 # OS / IDE Specific
 .DS_Store
@@ -30,17 +41,8 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Keep processed data
-!data/processed/.gitkeep
-
-# Database files
-*.db
-*.sqlite
-*.duckdb
-
-# -------------------------
 # Logs & Reports
-# -------------------------
+
 *.log
 *.out
 *.tmp
