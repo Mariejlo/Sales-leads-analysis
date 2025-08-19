@@ -12,3 +12,7 @@ venv/
 # Ignore local config files
 *.env
 *.DS_Store
+*.log
+
+#Ignore raw data files
+data/
