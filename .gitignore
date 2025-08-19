@@ -1,21 +1,18 @@
-# Ignore Python cache files
+
+# Ignore virtual environment, systems and  Python cache files
+venv/
+.env
 __pycache__/
 *.pyc
 *.pyo
-
-# Ignore virtual environment
-venv/
-
-# Ignore Jupyter notebook checkpoints
-.ipynb_checkpoints/
-
-# Ignore local config files
-*.env
 *.DS_Store
-*.log
 Thumbs.db
 
-#Ignore raw data files
+
+# ---Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+#Ignore raw data files only
 data/raw/
 
 # Keep processed data
