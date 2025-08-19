@@ -2,9 +2,16 @@
 # Ignore virtual environment, systems and  Python cache files
 venv/
 .env
+*.env
 __pycache__/
+*.py[cod]
 *.pyc
 *.pyo
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
 *.DS_Store
 Thumbs.db
 
@@ -15,5 +22,25 @@ Thumbs.db
 #Ignore raw data files only
 data/raw/
 
+# OS / IDE Specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
 # Keep processed data
-!data/processed/
+!data/processed/.gitkeep
+
+# Database files
+*.db
+*.sqlite
+*.duckdb
+
+# -------------------------
+# Logs & Reports
+# -------------------------
+*.log
+*.out
+*.tmp
