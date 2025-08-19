@@ -13,6 +13,10 @@ venv/
 *.env
 *.DS_Store
 *.log
+Thumbs.db
 
 #Ignore raw data files
-data/
+data/raw/
+
+# Keep processed data
+!data/processed/
